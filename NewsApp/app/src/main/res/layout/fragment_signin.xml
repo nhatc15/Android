@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    tools:context=".presentation.ui.fragment.login.SignInFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello"
+            android:fontFamily=""
+            android:textStyle="bold"
+            android:textColor="@color/mainColor"
+            android:textSize="48sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="@string/login_to_get_started"
+            android:layout_marginBottom="60dp"
+            android:textColor="@color/small_text_color"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_background"
+            android:elevation="5dp"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="15dp"
+            android:textSize="18sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_background"
+            android:elevation="5dp"
+            android:inputType="textPassword"
+            android:paddingHorizontal="15dp"
+            android:textSize="18sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbRememberPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/mainColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:buttonTint="@color/mainColor"
+                android:foregroundTint="@color/mainColor"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remember_me"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cbRememberPassword"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_the_password"
+                android:textColor="@color/mainColor"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bottom_background"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/or_continue_with"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textAlignment="center"
+            android:paddingVertical="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingVertical="5dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/second_bottom_background">
+
+                <ImageView
+                    android:id="@+id/ivFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_facebook"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tvFacebook"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/tvFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/facebook"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/ivFacebook"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/second_bottom_background"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/ivGoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_google"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tvGoogle"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/tvGoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/google"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ivGoogle"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/don_t_have_an_account"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"/>
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/sign_up"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/mainColor"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/get_started_with_no_account"
+                android:visibility="visible"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/mainColor"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

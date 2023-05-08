@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Assignment_Day06</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="add_note">Add Note</string>
+    <string name="write_your_title">Write your title</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="write_your_description">Write your description</string>
+    <string name="notes">Notes</string>
+    <string name="save">Save</string>
+</resources>

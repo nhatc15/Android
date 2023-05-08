@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="song_names">
+        <item>Call the nightingale</item>
+        <item>This is what heartbreak fell like</item>
+        <item>Pastlives</item>
+        <item>Love Story</item>
+        <item>We are the crystal gem</item>
+    </string-array>
+
+    <string-array name="artist_names">
+        <item>Vian Izak</item>
+        <item>JVKE</item>
+        <item>BORNS</item>
+        <item>Taylor Swift</item>
+        <item>Steven Universe</item>
+    </string-array>
+
+    <string-array name="audio_files">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+        <item>e</item>
+    </string-array>
+</resources>

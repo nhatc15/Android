@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="88d53780-3631-4d0e-8f92-de3e9c8f8755" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Assignment_Day06/app/src/main/java/com/example/assignment_day06/viewModel/ViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment_Day06/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment_Day06/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment_Day06/app/src/main/java/com/example/assignment_day06/Database.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment_Day06/app/src/main/java/com/example/assignment_day06/database/Database.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment_Day06/app/src/main/java/com/example/assignment_day06/ui/fragment/DetailFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment_Day06/app/src/main/java/com/example/assignment_day06/ui/fragment/DetailFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment_Day06/app/src/main/java/com/example/assignment_day06/ui/fragment/ListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment_Day06/app/src/main/java/com/example/assignment_day06/ui/fragment/ListFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment_Day06/app/src/main/res/layout/fragment_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment_Day06/app/src/main/res/layout/fragment_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment_Day06/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment_Day06/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GST_Lesson7_8_Ex1_NhatNV15/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/GST_Lesson7_8_Ex1_NhatNV15/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GST_Lesson7_8_Ex1_NhatNV15/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GST_Lesson7_8_Ex1_NhatNV15/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAndroidFinalExam/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BasicAndroidFinalExam/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicAndroidFinalExam/app/src/main/java/com/example/basicandroidfinalexam/MyService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../BasicAndroidFinalExam/app/src/main/java/com/example/basicandroidfinalexam/MyService.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LLT9punAOpNfImsbUIawo3gqAe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "F:/Work/android_04_android_assignment/Assignment_Day07/GST_Lesson7_8_Ex1_NhatNV15"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="88d53780-3631-4d0e-8f92-de3e9c8f8755" name="Changes" comment="" />
+      <created>1675649218687</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675649218687</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

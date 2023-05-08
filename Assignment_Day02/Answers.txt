@@ -1,0 +1,29 @@
+Câu 1: Có 3 cách để start 1 activity từ 1 activity
+- Dùng Intent()
+- Dùng lauchActivity()
+- Dùng egisterForActivityResult(GetContent()) { result: Result? ->// Handle the returned Result}
+Câu 2: Để pass data từ activity này sang activity khác ta dùng: 
+intent.putExtra(key, data)
+
+Câu 3: Cách để lấy data từ 1 activity khác:
+- Truyền từ activity 1 sang activity 2:
+private var resultLauncher = registerForActivityResult(GetContent()) { result: Result? ->
+    // Handle the returned Result
+}
+
+- Truyền từ activity 2 sang activity 1:
+setResult(RESULT_OK, intent.putExtra(key,data))
+
+Câu 4: Có 4 android:launchMode khác nhau mà bạn có thể sử dụng: standard, 
+singleTop, singleTask, singleInstance.
+- standard: Khi activity được khởi tạo, activity mới sẽ được đặt lên đỉnh của stack 
+trong cùng 1 task.
+
+- singleTop: Nếu tồn tại 1 Instance của activity cùng loại ở đỉnh của stack. Nó sẽ không tạo 
+activity mới, hệ thống sẽ đưa Intent tới Instance qua lời gọi tới phương thức onNewIntent() .
+
+- singleTask: Mỗi activity chỉ có 1 instance tại một thời điểm. Trong cùng 1 stack, khi gọi đến
+instance của activity singleTask thì các activity đặt trên nó đều bị xóa
+
+- singleÍntance:  Mỗi task chỉ có duy nhất một activity, bất kì activity nào khác được khởi tạo 
+thì nó sẽ được khởi tạo ở task khác. 

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/mainColor"
+                    android:paddingHorizontal="5dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vector_small"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="@string/logo" />
+
+                    <ImageView
+                        android:id="@+id/ivAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_account_circle_24"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="@string/account" />
+
+                    <ImageView
+                        android:id="@+id/ivLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_login_24"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="@string/login" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="5dp"
+                    android:background="@color/background_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="15dp"
+                        android:text="@string/latest"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvLatestNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="310dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/background_color"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4"
+                        tools:listitem="@layout/latest_article_item" />
+
+
+                    <ProgressBar
+                        android:id="@+id/paginationProgressBar"
+                        style="?attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="true"
+                        android:indeterminateTint="@color/mainColor"
+                        android:indeterminateTintMode="src_atop"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@+id/rvLatestNews"
+                        app:layout_constraintEnd_toEndOf="@+id/rvLatestNews"
+                        app:layout_constraintTop_toTopOf="@+id/rvLatestNews" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tbCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="scrollable"
+            app:tabRippleColor="@null"
+            app:tabSelectedTextColor="@color/mainColor"
+            android:clipToPadding="false">
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:background="@color/background_color"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout_editor_absoluteX="15dp">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vpCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

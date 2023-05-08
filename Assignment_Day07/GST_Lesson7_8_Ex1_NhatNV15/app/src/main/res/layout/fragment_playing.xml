@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/media_controller_background"
+    android:paddingLeft="10dp"
+    android:paddingTop="20dp"
+    android:paddingRight="10dp"
+    tools:context=".ui.PlayingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/ivPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_play" />
+
+    <ImageView
+        android:id="@+id/ivPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_pause"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="100dp"
+        android:src="@drawable/ic_next" />
+
+    <ImageView
+        android:id="@+id/ivPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/ic_previous" />
+
+</RelativeLayout>

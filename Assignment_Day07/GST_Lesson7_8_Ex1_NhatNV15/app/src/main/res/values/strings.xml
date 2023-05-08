@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GST_Lesson7_8_Ex1_NhatNV15</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fake_song_name">Hương Ngọc Lan</string>
+    <string name="fake_artist">Mỹ Linh</string>
+    <string name="fake_current_time">00:02</string>
+    <string name="fake_duration">04:23</string>
+    <string name="notification_title">Music Player</string>
+    <string name="notification_message">Music player is running</string>
+</resources>

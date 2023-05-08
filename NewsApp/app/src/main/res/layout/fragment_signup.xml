@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    tools:context=".presentation.ui.fragment.signup.SignUpFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:fontFamily=""
+            android:textStyle="bold"
+            android:elevation="10dp"
+            android:textColor="@color/mainColor"
+            android:textSize="48sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="@string/create_account"
+            android:layout_marginBottom="60dp"
+            android:textColor="@color/small_text_color"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:inputType="textEmailAddress"
+            android:elevation="5dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edittext_background" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etPassword"
+            android:inputType="textVisiblePassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:elevation="5dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edittext_background" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_password"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etEnterPassword"
+            android:inputType="textVisiblePassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:elevation="5dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/edittext_background" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bottom_background"
+            android:elevation="10dp"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_registered"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"/>
+            <TextView
+                android:id="@+id/tvSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/sign_in"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/mainColor"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
